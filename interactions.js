@@ -31,6 +31,59 @@
   window.addEventListener("resize", queueScrollUpdate, { passive: true });
   updateScrollState();
 
+  const mainNav = document.querySelector(".main-nav");
+  const navToggle = document.querySelector(".nav-toggle");
+
+  if (header && mainNav && navToggle) {
+    const setNavigationState = (isOpen) => {
+      header.classList.toggle("nav-open", isOpen);
+      mainNav.classList.toggle("is-open", isOpen);
+      navToggle.setAttribute("aria-expanded", String(isOpen));
+      navToggle.setAttribute("aria-label", isOpen ? navToggle.dataset.labelClose : navToggle.dataset.labelOpen);
+    };
+
+    header.classList.add("nav-enhanced");
+    navToggle.hidden = false;
+
+    navToggle.addEventListener("click", () => {
+      setNavigationState(navToggle.getAttribute("aria-expanded") !== "true");
+    });
+
+    mainNav.addEventListener("click", (event) => {
+      if (event.target.closest("a")) setNavigationState(false);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && navToggle.getAttribute("aria-expanded") === "true") {
+        setNavigationState(false);
+        navToggle.focus();
+      }
+    });
+
+    window.matchMedia("(min-width: 761px)").addEventListener("change", (event) => {
+      if (event.matches) setNavigationState(false);
+    });
+  }
+
+  document.querySelectorAll(".publication-list").forEach((list) => {
+    const more = list.querySelector(".publication-more");
+    const toggle = list.querySelector(".publication-toggle");
+    const label = toggle?.querySelector(".publication-toggle-label");
+
+    if (!more || !toggle || !label) return;
+
+    more.hidden = true;
+    toggle.hidden = false;
+
+    toggle.addEventListener("click", () => {
+      const isExpanded = toggle.getAttribute("aria-expanded") === "true";
+
+      more.hidden = isExpanded;
+      toggle.setAttribute("aria-expanded", String(!isExpanded));
+      label.textContent = isExpanded ? toggle.dataset.labelMore : toggle.dataset.labelLess;
+    });
+  });
+
   const revealElements = document.querySelectorAll([
     ".hero-copy > *",
     ".hero-profile",
