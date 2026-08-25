@@ -2,12 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://mrbrunoferreira.github.io/bruno-ferreira/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
-    <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/en/" />
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://mrbrunoferreira.github.io/bruno-ferreira/pt/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
   </url>
   <url>
-    <loc>https://mrbrunoferreira.github.io/bruno-ferreira/en/</loc>
-    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
-    <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/en/" />
+    <loc>https://mrbrunoferreira.github.io/bruno-ferreira/pt/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://mrbrunoferreira.github.io/bruno-ferreira/pt/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
   </url>
 </urlset>
