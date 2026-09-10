@@ -1,6 +1,6 @@
-# Bruno Ferreira | Applied AI Engineer
+# Bruno Ferreira | AI & Software Engineer
 
-Bilingual portfolio for organisations looking to hire an Applied AI Engineer or collaborate on applied AI projects.
+Bilingual portfolio covering AI, software, automation, Machine Learning and Data Science for engineering roles and B2B projects.
 
 - English: https://mrbrunoferreira.github.io/bruno-ferreira/
 - Portuguese: https://mrbrunoferreira.github.io/bruno-ferreira/pt/
@@ -8,9 +8,10 @@ Bilingual portfolio for organisations looking to hire an Applied AI Engineer or 
 
 ## Professional documents
 
-- Downloadable two-page CV in Portuguese and English, with and without a photo.
-- Client projects appear before the biography. Services cover document automation,
-  ongoing B2B engineering support, use-case assessment and practical training.
+- The public CV links use the two-page Portuguese and English versions with a photo.
+  The existing no-photo files remain available at their original URLs.
+- Client projects appear before the biography. Services cover software, AI,
+  automation, data analysis, ongoing engineering support and practical training.
 
 The website is static, uses no analytics or third-party scripts, and is published with GitHub Pages.
 

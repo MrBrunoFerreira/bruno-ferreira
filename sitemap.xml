@@ -12,4 +12,14 @@
     <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mrbrunoferreira.github.io/bruno-ferreira/" />
   </url>
+  <url>
+    <loc>https://mrbrunoferreira.github.io/bruno-ferreira/case-studies/hvac/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://mrbrunoferreira.github.io/bruno-ferreira/pt/casos/avac/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/case-studies/hvac/" />
+  </url>
+  <url>
+    <loc>https://mrbrunoferreira.github.io/bruno-ferreira/pt/casos/avac/</loc>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://mrbrunoferreira.github.io/bruno-ferreira/pt/casos/avac/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://mrbrunoferreira.github.io/bruno-ferreira/case-studies/hvac/" />
+  </url>
 </urlset>
