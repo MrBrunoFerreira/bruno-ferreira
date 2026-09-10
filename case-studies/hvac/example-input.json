@@ -1,0 +1,27 @@
+{
+  "kind": "synthetic_portfolio_example",
+  "notice": "Invented values for a review demonstration. Not client data, a pipeline benchmark or a PDF extraction service.",
+  "sources": [
+    {
+      "equipment": "UTA-01",
+      "page": 12,
+      "airflow_m3_h": 4200,
+      "pressure_pa": 350,
+      "filter_class": "ePM1 60%"
+    },
+    {
+      "equipment": "UTA-02",
+      "page": 18,
+      "airflow_m3_h": 6100,
+      "pressure_pa": 480,
+      "filter_class": null
+    }
+  ],
+  "candidate": {
+    "target_equipment": "UTA-02",
+    "field": "filter_class",
+    "value": "ePM1 60%",
+    "source_equipment": "UTA-01",
+    "source_page": 12
+  }
+}

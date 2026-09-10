@@ -1,0 +1,7 @@
+equipment,field,value,source_page,status
+UTA-01,airflow_m3_h,4200,12,source_present
+UTA-01,pressure_pa,350,12,source_present
+UTA-01,filter_class,ePM1 60%,12,source_present
+UTA-02,airflow_m3_h,6100,18,source_present
+UTA-02,pressure_pa,480,18,source_present
+UTA-02,filter_class,,,needs_review

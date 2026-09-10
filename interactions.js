@@ -130,26 +130,28 @@
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
 
-  if ("IntersectionObserver" in window && observedSections.length) {
-    const navigationObserver = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (!visible) return;
-
+  if (observedSections.length) {
+    let navigationFrame = 0;
+    const updateNavigation = () => {
+      navigationFrame = 0;
+      const marker = Math.min(window.innerHeight * 0.3, 240);
+      const active = observedSections.find((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= marker && rect.bottom > marker;
+      });
       sectionLinks.forEach((link) => {
-        const isActive = link.getAttribute("href") === `#${visible.target.id}`;
+        const isActive = Boolean(active && link.getAttribute("href") === `#${active.id}`);
         link.classList.toggle("is-active", isActive);
         if (isActive) link.setAttribute("aria-current", "location");
         else link.removeAttribute("aria-current");
       });
-    }, {
-      rootMargin: "-28% 0px -58% 0px",
-      threshold: [0.01, 0.2, 0.5],
-    });
-
-    observedSections.forEach((section) => navigationObserver.observe(section));
+    };
+    const queueNavigation = () => {
+      if (!navigationFrame) navigationFrame = requestAnimationFrame(updateNavigation);
+    };
+    window.addEventListener("scroll", queueNavigation, { passive: true });
+    window.addEventListener("resize", queueNavigation);
+    updateNavigation();
   }
 
   if (!reducedMotion && window.matchMedia("(pointer: fine)").matches) {

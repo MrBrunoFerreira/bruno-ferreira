@@ -1,0 +1,56 @@
+{
+  "kind": "synthetic_portfolio_example",
+  "rows": [
+    {
+      "equipment": "UTA-01",
+      "field": "airflow_m3_h",
+      "value": 4200,
+      "source_page": 12,
+      "status": "source_present"
+    },
+    {
+      "equipment": "UTA-01",
+      "field": "pressure_pa",
+      "value": 350,
+      "source_page": 12,
+      "status": "source_present"
+    },
+    {
+      "equipment": "UTA-01",
+      "field": "filter_class",
+      "value": "ePM1 60%",
+      "source_page": 12,
+      "status": "source_present"
+    },
+    {
+      "equipment": "UTA-02",
+      "field": "airflow_m3_h",
+      "value": 6100,
+      "source_page": 18,
+      "status": "source_present"
+    },
+    {
+      "equipment": "UTA-02",
+      "field": "pressure_pa",
+      "value": 480,
+      "source_page": 18,
+      "status": "source_present"
+    },
+    {
+      "equipment": "UTA-02",
+      "field": "filter_class",
+      "value": null,
+      "source_page": null,
+      "status": "needs_review"
+    }
+  ],
+  "candidate_review": {
+    "target_equipment": "UTA-02",
+    "field": "filter_class",
+    "value": "ePM1 60%",
+    "source_equipment": "UTA-01",
+    "source_page": 12,
+    "accepted": false,
+    "reason": "equipment_mismatch"
+  }
+}
