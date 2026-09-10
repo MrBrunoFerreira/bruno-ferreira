@@ -2328,3 +2328,29 @@ section {
     display: none;
   }
 }
+
+/* Shorter introduction and explicit recruitment / B2B availability. */
+.hero h1 { font-size: clamp(2.6rem, 4.7vw, 4.8rem); max-width: 14ch; }
+.hero-intro { max-width: 58ch; }
+.hero-availability { max-width: 62ch; margin-top: 22px; color: var(--ink-soft); font-size: .95rem; line-height: 1.65; }
+.focus-track { animation: none; width: 100%; min-width: 0; flex-wrap: wrap; justify-content: center; }
+@media (max-width: 760px) {
+  .hero h1 { max-width: 100%; font-size: clamp(2.3rem, 9.2vw, 3.6rem); }
+  .hero-availability { font-size: .94rem; }
+}
+
+/* Clear project status and separate contact routes for clients and recruiters. */
+.project-state { display: inline-block; margin: 0 0 24px; padding: 8px 12px; border: 1px solid currentColor; border-radius: 6px; font-size: .8rem; line-height: 1.5; }
+.about-body { grid-template-columns: 1fr; }
+.about-copy { grid-column: 1 / -1; grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: none; padding: 40px 0; }
+.service-contact { margin: 32px 0 0; }
+.contact-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 36px; }
+.contact-options article { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.contact-options .button { align-self: flex-start; margin-top: auto; }
+.contact-direct { margin: 28px 0 0; color: #fff; line-height: 1.8; overflow-wrap: anywhere; }
+.contact-direct a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 760px) {
+  .about-copy { grid-template-columns: 1fr; padding: 32px 0; }
+  .contact-options { grid-template-columns: 1fr; }
+  .contact-options .button { max-width: 100%; white-space: normal; text-align: left; }
+}
