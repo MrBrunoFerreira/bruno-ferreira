@@ -44,8 +44,8 @@
 </button>
 <nav class="main-nav" id="main-navigation" aria-label="Main navigation">
 <a href="#projects">Projects</a>
+<a href="#background">Experience</a>
 <a href="#about">About</a>
-<a href="#background">Background</a>
 <a href="#services">Services</a>
 <a href="#research">Research</a>
 <a class="nav-contact" href="#contact">Contact</a>
@@ -60,26 +60,22 @@
 <main id="home" tabindex="-1">
 <section class="hero section-shell" aria-labelledby="hero-title">
 <div class="hero-copy">
-<p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Applied AI Engineer · Pombal, Portugal</p>
-<h1 id="hero-title">I build AI systems for <em>document automation.</em></h1>
-<p class="hero-intro">I build applications that turn PDFs, technical specifications and business rules into structured data and review workflows. I combine Python, LLMs, RAG and full-stack engineering, taking responsibility for design, implementation and evaluation within each project scope.</p>
+<p class="eyebrow">Available for Applied AI / AI Solutions roles</p>
+<h1 id="hero-title">Applied AI Engineer<em>Python, LLMs &amp; document automation</em></h1>
+<p class="hero-intro">I build applications that turn complex documents into structured data and review workflows. My client work covers LegalTech, engineering specifications and quality validation, from solution design to implementation and evaluation.</p>
+<p class="hero-evidence">4+ years across AI research, university teaching and applied projects. MSc in Informatics Engineering, University of Coimbra.</p>
 <div class="hero-actions">
-<a class="button button-primary" href="#projects">See client projects <span aria-hidden="true">↓</span></a>
-<a class="button button-secondary" href="../bruno-ferreira-cv-en.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+<a class="button button-primary" href="../bruno-ferreira-cv-en.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+<a class="button button-secondary" href="mailto:brunocar.ferreira@gmail.com?subject=Applied%20AI%20opportunity%20-%20Bruno%20Ferreira">Discuss a role <span aria-hidden="true">↗</span></a>
 </div>
-<p class="hero-availability">Open to Applied AI / AI Solutions roles and B2B projects or ongoing contracts through my company.</p>
+<div class="hero-shortcuts"><a href="#projects">Explore my projects <span aria-hidden="true">↓</span></a><a href="#background">View experience</a></div>
+<p class="hero-availability">Also available through my company for B2B projects and ongoing contracts.</p>
 </div>
-<aside class="hero-profile" aria-label="Professional summary">
-<div class="portrait-wrap">
-<img src="../bruno-ferreira-portrait-2026.jpg" alt="Portrait of Bruno Ferreira" width="1254" height="1254">
-</div>
-<p class="profile-label">Bruno Ferreira</p>
-<h2>From NLP research to client software.</h2>
-<dl class="profile-facts">
-<div><dt>Work with me</dt><dd>Roles · B2B projects · Ongoing contracts</dd></div>
-<div><dt>Core stack</dt><dd>Python · FastAPI · LLMs · RAG</dd></div>
-<div><dt>AI experience</dt><dd>4+ years across research, teaching and client projects</dd></div>
-</dl>
+<aside class="hero-profile" aria-label="Bruno Ferreira">
+<div class="portrait-wrap"><img src="../bruno-ferreira-portrait-2026.jpg" alt="Portrait of Bruno Ferreira" width="1254" height="1254" fetchpriority="high"></div>
+<p class="profile-label">AI engineering · NLP research</p>
+<h2>Bruno Ferreira</h2>
+<dl class="profile-facts"><div><dt>Based in</dt><dd>Pombal, Portugal</dd></div><div><dt>Languages</dt><dd>Portuguese · Advanced English</dd></div></dl>
 </aside>
 </section>
 <div class="focus-strip">
@@ -94,139 +90,38 @@
 </div>
 
 <section class="projects" id="projects" aria-labelledby="projects-title">
-<div class="section-shell section-heading section-heading-row">
-<div>
-<p class="section-index">01 / Projects</p>
-<h2 id="projects-title">Projects and results</h2>
-</div>
-<p class="section-note">Three client AI projects, followed by additional work. Each case identifies my contribution and the state of the solution.</p>
-</div>
-<div class="section-shell project-grid">
-<article class="project-card project-featured project-visa">
-<p class="project-state">Client work · Components in development</p>
-<div class="project-topline">
-<p>LegalTech · Applied AI</p>
-<span>2025 · Present</span>
-</div>
-<div class="project-featured-content">
-<div>
-<p class="project-number">Project 01</p>
-<h3>AI platform for US visa workflows</h3>
-<p class="project-lead">Structured intake, AI document analysis and reports supporting legal review of US visa cases.</p>
-</div>
-<dl class="project-details">
-<div><dt>Problem</dt><dd>Applying USCIS criteria to scattered documentation in a consistent, auditable way.</dd></div>
-<div><dt>Contribution</dt><dd>Designed and implemented components for structured intake, triage, dynamic questionnaires, document management, OCR, language-model analysis and legal-review reporting.</dd></div>
-<div><dt>Outcome</dt><dd>A multi-tenant full-stack architecture in development, designed to support an evidence-guided legal-review process.</dd></div>
-</dl>
-</div>
-<div class="tag-list" role="list" aria-label="Project technologies">
-<span role="listitem">Python</span>
-<span role="listitem">TypeScript</span>
-<span role="listitem">FastAPI</span>
-<span role="listitem">Next.js</span>
-<span role="listitem">PostgreSQL</span>
-<span role="listitem">Redis</span>
-<span role="listitem">Alembic</span>
-<span role="listitem">Docker</span>
-<span role="listitem">OCR</span>
-<span role="listitem">LLMs</span>
-<span role="listitem">ClamAV</span>
-<span role="listitem">Sentry</span>
-</div>
+<div class="section-shell section-heading section-heading-row"><div><p class="section-index">01 / Projects</p><h2 id="projects-title">What I have built</h2></div><p class="section-note">Selected client projects, with the deliverable, my implementation and how the output is reviewed.</p></div>
+<div class="section-shell case-list"><article class="project-card project-case project-visa project-featured" id="project-legaltech" aria-labelledby="project-legaltech-title">
+<div class="project-topline"><p>LegalTech · Client project</p><span>2025–present</span></div>
+<div class="case-body">
+<div class="case-overview"><p class="case-status">Components in development</p><h3 id="project-legaltech-title">AI for US visa workflows</h3><p class="case-outcome">Structured intake and reports for legal review.</p><p class="case-context">Components that organise case information and supporting documents in a multi-tenant application.</p></div>
+<dl class="case-details"><div><dt>My implementation</dt><dd>Designed and built intake, triage, dynamic questionnaires and document management, integrating OCR and language-model analysis.</dd></div><div><dt>Evidence &amp; review</dt><dd>Reports draw on document evidence to support review against USCIS criteria. Legal assessment remains with the reviewing team.</dd></div></dl>
+</div><div class="tag-list case-technologies"><span>Python</span><span>FastAPI</span><span>Next.js</span><span>PostgreSQL</span><span>OCR / LLMs</span><span>Docker</span></div>
+</article><article class="project-card project-case project-hvac" id="project-hvac" aria-labelledby="project-hvac-title">
+<div class="project-topline"><p>Document extraction · Client project</p><span>Jan–Mar 2026</span></div>
+<div class="case-body">
+<div class="case-overview"><p class="case-status">Technical project</p><h3 id="project-hvac-title">HVAC specification extraction</h3><p class="case-outcome">From PDF specifications to Excel and JSON, with source-page evidence.</p><p class="case-context">Structured outputs that let engineers review technical requirements from Portuguese specification documents.</p></div>
+<dl class="case-details"><div><dt>My implementation</dt><dd>Built a Python pipeline combining embedding-based RAG, deterministic table mapping and regular expressions with vision and language models.</dd></div><div><dt>Evidence &amp; review</dt><dd>Retained the source page for extracted information and evaluated outputs against manually prepared reference data.</dd></div></dl>
+</div><div class="tag-list case-technologies"><span>Python</span><span>RAG</span><span>PDF / tables</span><span>Vision / LLMs</span><span>Excel / JSON</span></div>
+</article><article class="project-card project-case project-quality" id="project-quality" aria-labelledby="project-quality-title">
+<div class="project-topline"><p>Quality documentation · Client project</p><span>2026</span></div>
+<div class="case-body">
+<div class="case-overview"><p class="case-status">Private pilot</p><h3 id="project-quality-title">Quality Copilot</h3><p class="case-outcome">Document checks with verifiable reports for human review.</p><p class="case-context">A private pilot for checking packaging artwork and technical documentation across successive review stages.</p></div>
+<dl class="case-details"><div><dt>My implementation</dt><dd>Designed and built modules for dimensional checks, content validation, correction verification and technical-sheet preparation using Python, OCR and Claude Code skills.</dd></div><div><dt>Evidence &amp; review</dt><dd>Defined the evidence required at each stage. Reports support human validation of findings and corrections.</dd></div></dl>
+</div><div class="tag-list case-technologies"><span>Python</span><span>OCR</span><span>Claude Code skills</span><span>Document validation</span></div>
+</article><div class="additional-heading"><h3>Additional work</h3><p>AI and privacy, alongside a commissioned evidence-evaluation project.</p></div>
+<div class="additional-project-grid">
+<article class="project-card project-compact project-privacy" id="project-privacy">
+<div class="project-topline"><p>AI and privacy</p><span>2026</span></div>
+<h3>Privacy-by-design AI platform</h3><p class="case-outcome">Local anonymisation before external LLM workflows.</p><p class="case-context">Built a functional React/TypeScript PWA with local NER and ONNX for personal-data detection. Includes document processing, model-assisted chat, projects and user profiles.</p>
+<div class="tag-list"><span>React / TypeScript</span><span>NER / ONNX</span><span>PWA</span></div>
 </article>
-<article class="project-card project-secondary project-hvac">
-<div class="project-topline">
-<p>Document engineering · Applied AI</p>
-<span>Jan–Mar 2026</span>
-</div>
-<p class="project-number">Project 02</p>
-<h3>HVAC technical-specification extraction</h3>
-<dl class="project-summary-grid">
-<div><dt>Problem</dt><dd>Transforming Portuguese HVAC specification PDFs into structured outputs for engineering review.</dd></div>
-<div><dt>Contribution</dt><dd>Took responsibility for designing and implementing a hybrid extraction pipeline combining embedding-based RAG, deterministic table mapping and regular expressions with vision and language models.</dd></div>
-<div><dt>Outcome</dt><dd>Structured Excel and JSON outputs with source-page evidence and evaluation against manual references.</dd></div>
-</dl>
-<div class="project-card-footer">
-<div class="tag-list">
-<span>Python</span>
-<span>RAG</span>
-<span>Embeddings</span>
-<span>Regex</span>
-<span>PDF</span>
-<span>Tables</span>
-<span>Vision</span>
-<span>LLMs</span>
-<span>Excel</span>
-<span>JSON</span>
-</div>
-<span class="project-private">Technical project</span>
-</div>
+<article class="project-card project-compact project-the" id="project-the">
+<div class="project-topline"><p>Commissioned project</p><span>2025</span></div>
+<h3>THE 17.3 evidence evaluation</h3><p class="case-outcome">A repeatable review of public university evidence.</p><p class="case-context">Designed and carried out an evaluation across indicators 17.3.1 to 17.3.17 of the THE Impact Rankings, defining the evidence-review method and assessment process.</p>
+<a class="case-source" href="https://www.timeshighereducation.com/world-university-rankings/impact-rankings-2025-methodology" target="_blank" rel="noreferrer">About the THE methodology <span aria-hidden="true">↗</span></a>
 </article>
-<article class="project-card project-secondary project-quality">
-<div class="project-topline">
-<p>Applied AI · Consulting</p>
-<span>2026</span>
-</div>
-<p class="project-number">Project 03</p>
-<h3>Quality Copilot for document validation</h3>
-<dl class="project-summary-grid">
-<div><dt>Problem</dt><dd>Validating packaging and technical documentation across several stages, with heterogeneous criteria and a risk of omissions.</dd></div>
-<div><dt>Contribution</dt><dd>Designed and built specialised modules, Python/OCR automation and verifiable reports.</dd></div>
-<div><dt>Outcome</dt><dd>A private pilot covering dimensional checks, content validation, correction verification and technical-sheet preparation, with human review at every stage.</dd></div>
-</dl>
-<div class="project-card-footer">
-<div class="tag-list">
-<span>Claude Code</span>
-<span>Skills</span>
-<span>Python</span>
-<span>OCR</span>
-</div>
-<span class="project-private">Private pilot</span>
-</div>
-</article>
-<article class="project-card project-secondary project-the">
-<div class="project-topline">
-<p>Global evaluation · Universities</p>
-<span>2025</span>
-</div>
-<p class="project-number">Project 04</p>
-<h3>Global THE 17.3 evaluation</h3>
-<p>I was commissioned to design and carry out an evaluation of the public evidence universities worldwide provide for THE Impact Rankings indicators 17.3.1 to 17.3.17, covering the 17 Sustainable Development Goals. I defined the evidence-review method and a repeatable assessment process.</p>
-<div class="project-card-footer">
-<div class="tag-list">
-<span>THE 17.3</span>
-<span>SDGs</span>
-<span>Evidence Review</span>
-</div>
-<a href="https://www.timeshighereducation.com/world-university-rankings/impact-rankings-2025-methodology" target="_blank" rel="noreferrer">THE context <span aria-hidden="true">↗</span>
-</a>
-</div>
-</article>
-<article class="project-card project-secondary project-privacy">
-<div class="project-topline">
-<p>AI and privacy</p>
-<span>2026</span>
-</div>
-<p class="project-number">Project 05</p>
-<h3>Privacy-by-design AI platform</h3>
-<dl class="project-summary-grid">
-<div><dt>Problem</dt><dd>Using generative AI without exposing sensitive information to external services.</dd></div>
-<div><dt>Contribution</dt><dd>Defined the product strategy and architecture and built a functional PWA with document processing and verifiable privacy controls.</dd></div>
-<div><dt>Outcome</dt><dd>Text and document anonymisation, model-assisted chat, projects and user profiles.</dd></div>
-</dl>
-<div class="project-card-footer">
-<div class="tag-list">
-<span>React</span>
-<span>TypeScript</span>
-<span>NER</span>
-<span>ONNX</span>
-<span>LLMs</span>
-<span>Privacy by Design</span>
-</div>
-</div>
-</article>
-</div>
+</div></div>
 </section>
 <section class="about section-shell" id="about" aria-labelledby="about-title">
 <div class="section-heading"><p class="section-index">02 / About</p><h2 id="about-title">AI engineering grounded in research</h2></div>
@@ -362,9 +257,10 @@
 </section>
 <section class="contact section-shell" id="contact" aria-labelledby="contact-title">
 <p class="section-index section-index-light">06 / Contact</p>
-<div class="contact-prompt"><p class="contact-kicker">Pombal, Portugal · Focused projects and ongoing contracts</p><h2 id="contact-title">Tell me what you need to build</h2></div>
+<div class="contact-prompt"><p class="contact-kicker">Pombal, Portugal · Applied AI Engineer / AI Solutions Engineer</p><h2 id="contact-title">Let&#x27;s talk about your team</h2></div>
 <div class="contact-paths contact-options">
-<article><h3>Project or B2B contract</h3><p>Describe the workflow, intended outcome and timeline. We can scope a focused project or an ongoing engagement through my company.</p><a class="button button-accent" href="mailto:brunocar.ferreira@gmail.com?subject=B2B%20project%20-%20Bruno%20Ferreira">Discuss services <span aria-hidden="true">↗</span></a></article><article><h3>Role within a team</h3><p>I am looking for Applied AI Engineer or AI Solutions Engineer roles. Share the technical challenge, responsibilities and working arrangement.</p><a class="button button-accent" href="mailto:brunocar.ferreira@gmail.com?subject=Applied%20AI%20opportunity%20-%20Bruno%20Ferreira">Share an opportunity <span aria-hidden="true">↗</span></a></article>
+<article class="contact-role"><h3>Hiring an AI engineer?</h3><p>Share the technical challenge, responsibilities and working arrangement. I am looking for an Applied AI Engineer or AI Solutions Engineer role.</p><a class="button button-accent" href="mailto:brunocar.ferreira@gmail.com?subject=Applied%20AI%20opportunity%20-%20Bruno%20Ferreira">Share a role <span aria-hidden="true">↗</span></a></article>
+<article><h3>Need project delivery or ongoing support?</h3><p>I also work through my company. We can discuss a scoped AI project, ongoing engineering support or practical team training.</p><a class="button button-outline-light" href="mailto:brunocar.ferreira@gmail.com?subject=B2B%20project%20-%20Bruno%20Ferreira">Discuss a B2B engagement <span aria-hidden="true">↗</span></a></article>
 </div>
 <p class="contact-direct"><a href="mailto:brunocar.ferreira@gmail.com">brunocar.ferreira@gmail.com</a> · <a href="https://www.linkedin.com/in/mrbclf/" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="../bruno-ferreira-cv-en.pdf" download>Download CV</a></p>
 </section>
